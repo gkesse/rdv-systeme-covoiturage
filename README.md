@@ -7,10 +7,8 @@ conception d’un système de covoiturage en PHP avec Symfony.
 
 * Nous créons le projet Symfony avec la commande (composer).
 
-<span style="color:#00b050;font-family:Courier">
-// Terminal
-</span>
-```sh
+<span style="color:#00b050;font-family:Courier">// Terminal</span>
+```
 composer create-project symfony/website-skeleton:"^4.4" .
 ```
 
