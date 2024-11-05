@@ -1,0 +1,13 @@
+{
+    "pad": {
+        "carpool": {
+            "title":"Rezo Pouce",
+            "link":"https://rezopouce.fr"
+        },
+        "mobility":{
+            "title":"Offres mobilités",
+            "subtitle":"pour les pros",
+            "link":"https://pro.mobicoop.fr"
+        }
+    }
+}

@@ -1,0 +1,17 @@
+imports:
+    resource: '@MobicoopBundle/Resources/config/services.yaml'
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+    App\:
+        resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/'
+            - '../src/Entity/'
+            - '../src/Kernel.php'
+            - '../src/MobicoopBundle/'
+    App\Controller\:
+        resource: '../src/Controller/'
+        tags: ['controller.service_arguments']

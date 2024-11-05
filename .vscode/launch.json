@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "v01. Xdebug",
+            "type": "php",
+            "request": "launch",
+            "stopOnEntry": true,
+            "runtimeArgs": [
+                "-dxdebug.mode=debug",
+                "-dxdebug.start_with_request=yes",
+                "-S",
+                "localhost:8000"
+            ],
+            "program": "",
+            "cwd": "${workspaceRoot}/v01/public",
+            "port": 9003,
+            "serverReadyAction": {
+                "pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
+                "uriFormat": "http://localhost:%s",
+                "action": "openExternally"
+            }
+        },
+        {
+            "name": "v01. Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8000",
+            "webRoot": "${workspaceFolder}/v01/public",
+            "sourceMapPathOverrides": {
+              "webpack:///src/*": "${workspaceFolder}/v01/src/*"
+            }
+        }
+    ]
+}

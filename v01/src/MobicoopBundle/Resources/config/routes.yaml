@@ -1,0 +1,6 @@
+home:
+  path:
+    fr: /
+    en: /en/
+    nl: /en/
+  controller: Mobicoop\Bundle\MobicoopBundle\Controller\DefaultController::index

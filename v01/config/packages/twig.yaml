@@ -1,0 +1,9 @@
+twig:
+  paths:
+    "%kernel.project_dir%/templates": Bundle
+    "%kernel.project_dir%/src/MobicoopBundle/Resources/views": Mobicoop
+  debug: "%kernel.debug%"
+  strict_variables: "%kernel.debug%"
+  cache: false
+  globals:
+    app_name: "%env(APP_NAME)%"
